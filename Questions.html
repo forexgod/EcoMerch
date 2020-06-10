@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="style.css">
+<div class="topnav">
+<a class="active" href="index.html">Home</a>
+<a href="file:///C:/Users/reymahey/Desktop/Web%20Assignmnet/images.html">Slide Show</a>
+<a href="file:///C:/Users/reymahey/Desktop/Web%20Assignmnet/Questions.html">Questions</a>
+
+</div>
+
+<h1>Questions</h1>
+<p1> Part A Planning </p1>
+<p> 1.	Describe your website. What will the theme be, how will it look?</p> <p> My website will be a online store <p>
+<p> 2.	List all complex CSS and/or JavaScript that will be required (animations, buttons, forms, etc.) </p> <p>   style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 16px;
+  background-color: #dddddd;
+}
+/style>
+
+div class="topnav"
+a class="active" href="index.html">Home</a>
+a href="file:///C:/Users/reymahey/Desktop/Web%20Assignmnet/images.html">Slide Show</a>
+a href="file:///C:/Users/reymahey/Desktop/Web%20Assignmnet/Questions.html">Questions</a>
+a href="#about">About</a>
+</div>
+<p>
+<p> 3.	List all assets you will need (videos, pictures, sounds, etc.). You cannot assets with copyright restrictions. </p> <p> Images, new html for the navigation bar, google fonts <p>
+<p1> Part D Self reflection </p1>
+<p> 1.	What unique features were added to your website? </p> <p> I added navigation bar and a slide show and some unique fonts i got from google <p>
+  <p>2.	Describe any bugs/errors in the website that you did not have time to fix. </p> <p> For the slide show its not in the middle and the proportion are not the same <p>
+    <p> 3.	Copy and explain your most complex block of code. What does it do? </p> <p>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex-1].style.display = "block";
+    }
+    This code makes slide show possible
+    <p>
+<p> 4.	Which, if any, of the planned features did you NOT implement or only partially implement. Describe WHY in a sentence each. If you have a legitimate justification, it may not cost you marks. </p>
+<P> I did not implement the hover image feature, I tried but it got complicated and i give up and settled on a Slide Show <p>
